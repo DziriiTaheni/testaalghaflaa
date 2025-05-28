@@ -89,11 +89,11 @@ jobs:
         with:
           node-version: ${{ steps.detect-node.outputs.version }}
 
-      - name: Mise à jour du CLI RN et dépendances
-        run: |
-          npm install @react-native-community/cli@latest
-          npm install @react-native-community/cli-platform-android@latest
-          npm install --legacy-peer-deps
+- name: Mise à jour du CLI RN et dépendances
+  run: |
+    npm install @react-native-community/cli@latest --legacy-peer-deps
+    npm install @react-native-community/cli-platform-android@latest --legacy-peer-deps
+
 
 
 
