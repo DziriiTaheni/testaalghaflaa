@@ -98,9 +98,9 @@ jobs:
 
 
       - name: Clean npm and reinstall
-  run: |
-    rm -rf node_modules package-lock.json
-    npm install --legacy-peer-deps
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
 
 
 
