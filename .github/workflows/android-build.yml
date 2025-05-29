@@ -92,6 +92,11 @@ jobs:
       - name: Install npm dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Check node_modules content
+        run: ls -l node_modules/@react-native-community/cli-platform-android
+
+
+
       - name: Mise à jour du CLI RN et dépendances
         run: |
           npm install @react-native-community/cli@latest --legacy-peer-deps
